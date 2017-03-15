@@ -94,7 +94,7 @@ repe cmpsb                    ;comparing strings di and si
 je _EQ
 jne _NEQ
 _EQ:                           
-;mov si,bx
+mov si,bx
 call Shift                    ;shift string
 mov di, offset str2           
 xor cx,cx
